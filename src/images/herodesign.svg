@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="460" viewBox="0 0 460 460">
+  <g id="Herodesign" transform="translate(-1084 -356)">
+    <rect id="Rechteck_2" data-name="Rechteck 2" width="115" height="115" rx="18" transform="translate(1314 356)" fill="rgba(0,64,94,0.7)"/>
+    <rect id="Rechteck_5" data-name="Rechteck 5" width="115" height="115" rx="18" transform="translate(1314 586)" fill="rgba(0,64,94,0.7)"/>
+    <rect id="Rechteck_7" data-name="Rechteck 7" width="115" height="115" rx="18" transform="translate(1429 471)" fill="rgba(0,165,168,0.7)"/>
+    <rect id="Rechteck_8" data-name="Rechteck 8" width="115" height="115" rx="18" transform="translate(1084 586)" fill="rgba(0,165,168,0.5)"/>
+    <rect id="Rechteck_3" data-name="Rechteck 3" width="115" height="115" rx="18" transform="translate(1199 471)" fill="rgba(255,255,255,0.7)"/>
+    <rect id="Rechteck_6" data-name="Rechteck 6" width="115" height="115" rx="18" transform="translate(1199 701)" fill="rgba(255,255,255,0.7)"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="57.5" cy="57.5" r="57.5" transform="translate(1314 471)" fill="rgba(245,3,78,0.7)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="57.5" cy="57.5" r="57.5" transform="translate(1199 586)" fill="rgba(245,3,78,0.7)"/>
+  </g>
+</svg>
