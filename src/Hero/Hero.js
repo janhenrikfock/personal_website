@@ -5,14 +5,14 @@ export default function Hero() {
     <section className="hero">
       <div className="content">
         <h1>Frisch gebackener Junior-Web Developer</h1>
-        <div className="meet">
-          <p className="text">
-            Quereinsteiger im Web-Development frisch aus dem Bootcamp. Ich
-            verwandele Ideen in Code.
-          </p>
-          <p className="calltoaction">Lerne mich kennen:</p>
-        </div>
-        <svg width="52" height="92" viewBox="0 0 52 92">
+
+        <p className="text">
+          Quereinsteiger im Web-Development frisch aus dem Bootcamp. Ich
+          verwandele Ideen in Code.
+        </p>
+        <p className="calltoaction">Lerne mich kennen:</p>
+
+        <svg className="scroll" width="52" height="92" viewBox="0 0 52 92">
           <g
             id="Switch_CtA"
             data-name="Switch CtA"

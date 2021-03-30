@@ -1,9 +1,10 @@
 import './FeaturedProject.css'
-import ProjectScreenshot from '../images/screenshot.svg'
+import ProjectScreenshot from '../images/screenshot.png'
 
 export default function FeaturedProject() {
   return (
     <section className="featured">
+      <div className="bubble"></div>
       <div className="left">
         <div className="inner transition2">
           <p className="subtitle">Featured Project</p>
