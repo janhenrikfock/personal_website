@@ -1,6 +1,6 @@
-import './Skills.css'
+import './TechStack.css'
 
-export default function Skills() {
+export default function TechStack() {
   return (
     <section className="skills">
       <div className="skills-container">

@@ -1,22 +1,24 @@
 import './Header.css'
-import jhflogo from '../images/janhenrikfock.png'
+import jhflogo from '../images/janhenrikfock.svg'
 import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 
 export default function Header() {
   return (
-    <header className="header">
-      <img src={jhflogo} alt="logo of the websites owner" />
-      <nav>
-        <ul>
-          <li href="#">About me</li>
-          <li href="#">My work</li>
-          <li href="#">Contact</li>
-        </ul>
-      </nav>
+    <div className="nav-container">
+      <header className="header">
+        <img src={jhflogo} class="logo" alt="logo of the websites owner" />
+        <nav>
+          <ul className="navigation">
+            <li href="#">My Work</li>
+            <li href="#">Just me</li>
+            <li href="#">Contact</li>
+          </ul>
+        </nav>
+      </header>
       <div className="social-header">
-        <ul>
+        <ul className="social-nav">
           <li>
             <a href="https://github.com/">
               <img src={github} alt="github logo" />
@@ -34,6 +36,6 @@ export default function Header() {
           </li>
         </ul>
       </div>
-    </header>
+    </div>
   )
 }

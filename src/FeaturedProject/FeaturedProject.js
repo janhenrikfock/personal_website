@@ -1,5 +1,5 @@
 import './FeaturedProject.css'
-import ProjectScreenshot from '../images/screenshot.png'
+import ProjectScreenshot from '../images/screenshot.svg'
 
 export default function FeaturedProject() {
   return (

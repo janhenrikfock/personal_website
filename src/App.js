@@ -2,7 +2,7 @@ import './App.css'
 import Header from './Header/Header'
 import Hero from './Hero/Hero'
 import FeaturedProject from './FeaturedProject/FeaturedProject'
-import Skills from './Skills/Skills'
+import TechStack from './TechStack/TechStack'
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <main>
         <Hero />
         <FeaturedProject />
-        <Skills />
+        <TechStack />
       </main>
     </div>
   )
