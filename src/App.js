@@ -3,7 +3,6 @@ import Header from './Header/Header'
 import Hero from './Hero/Hero'
 import FeaturedProject from './FeaturedProject/FeaturedProject'
 import TechStack from './TechStack/TechStack'
-import AboutMe from './AboutMe/AboutMe'
 
 export default function App() {
   return (
@@ -13,7 +12,6 @@ export default function App() {
         <Hero />
         <FeaturedProject />
         <TechStack />
-        <AboutMe />
       </main>
     </AppContainer>
   )
