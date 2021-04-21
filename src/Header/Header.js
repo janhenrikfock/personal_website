@@ -1,24 +1,28 @@
-import './Header.css'
+import styled from 'styled-components/macro'
 import jhflogo from '../images/janhenrikfock.svg'
 import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 
 export default function Header() {
+  function scrollTo(scroll) {
+    window.scrollTo({ top: scroll, behavior: 'smooth' })
+  }
   return (
-    <div className="nav-container">
-      <header className="header">
-        <img src={jhflogo} class="logo" alt="logo of the websites owner" />
-        <nav>
-          <ul className="navigation">
-            <li href="#">My Work</li>
-            <li href="#">Just me</li>
-            <li href="#">Contact</li>
-          </ul>
-        </nav>
-      </header>
-      <div className="social-header">
-        <ul className="social-nav">
+    <HeaderContainer>
+      <NavContainer>
+        <Logo src={jhflogo} alt="logo of the websites owner" />
+
+        <Navigation>
+          <NavItem onClick={() => scrollTo(800)} href="#">
+            My Work
+          </NavItem>
+          <NavItem href="#">Abou me</NavItem>
+          <NavItem href="#">Contact</NavItem>
+        </Navigation>
+      </NavContainer>
+      <SocialHeader>
+        <SocialNav>
           <li>
             <a href="https://github.com/">
               <img src={github} alt="github logo" />
@@ -34,8 +38,51 @@ export default function Header() {
               <img src={linkedin} alt="linkedin logo" />
             </a>
           </li>
-        </ul>
-      </div>
-    </div>
+        </SocialNav>
+      </SocialHeader>
+    </HeaderContainer>
   )
 }
+const HeaderContainer = styled.div`
+  background-color: #023046;
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+`
+const NavContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  @media (min-width: 800px) {
+    background-color: #023046;
+    padding: 1.5em 10em;
+  }
+`
+const Logo = styled.img`
+  width: 20%;
+  min-width: 110px;
+  max-width: 160px;
+`
+const Navigation = styled.ul`
+  float: right;
+  display: flex;
+`
+const NavItem = styled.li`
+  cursor: pointer;
+  color: white;
+  padding: 0 1em;
+`
+const SocialHeader = styled.div`
+  display: none;
+  @media (min-width: 800px) {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+`
+const SocialNav = styled.ul`
+  display: flex;
+  gap: 4em;
+`

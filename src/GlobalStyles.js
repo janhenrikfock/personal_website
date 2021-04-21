@@ -1,10 +1,10 @@
+import { createGlobalStyle } from 'styled-components/macro'
+
+export default createGlobalStyle`
 * {
   box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
-}
 body {
   height: 100vh;
   margin: 0;
@@ -24,4 +24,4 @@ img {
 section {
   padding: 4em 2em;
   text-align: center;
-}
+}`
