@@ -5,18 +5,13 @@ import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 
 export default function Header() {
-  function scrollTo(scroll) {
-    window.scrollTo({ top: scroll, behavior: 'smooth' })
-  }
   return (
     <HeaderContainer>
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
 
         <Navigation>
-          <NavItem onClick={() => scrollTo(800)} href="#">
-            My Work
-          </NavItem>
+          <NavItem href="#">My Work</NavItem>
           <NavItem href="#">Abou me</NavItem>
           <NavItem href="#">Contact</NavItem>
         </Navigation>
