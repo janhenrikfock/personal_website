@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <AppContainer>
-      <Header />
+      <Header projectRef={projectRef} />
       <main>
         <Hero />
         <FeaturedProject ref={projectRef} />

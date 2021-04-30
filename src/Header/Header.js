@@ -4,14 +4,22 @@ import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 
-export default function Header() {
+export default function Header({ projectRef }) {
+  function scrollTo(ref) {
+    ref.current.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <HeaderContainer>
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
 
         <Navigation>
-          <NavItem href="#">My Work</NavItem>
+          <NavItem onClick={() => scrollTo(projectRef)} href="#">
+            My Work
+          </NavItem>
           <NavItem href="#">Abou me</NavItem>
           <NavItem href="#">Contact</NavItem>
         </Navigation>
