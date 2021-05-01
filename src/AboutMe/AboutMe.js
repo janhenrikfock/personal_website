@@ -1,8 +1,9 @@
+import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function AboutMe() {
+function AboutMe(props, ref) {
   return (
-    <AboutMeSection>
+    <AboutMeSection ref={ref}>
       <Text>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -21,6 +22,10 @@ export default function AboutMe() {
     </AboutMeSection>
   )
 }
+
+const forwardedAboutMe = React.forwardRef(AboutMe)
+export default forwardedAboutMe
+
 const AboutMeSection = styled.section``
 const Text = styled.p`
   padding: 1em 0;

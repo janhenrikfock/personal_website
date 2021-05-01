@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import styled from 'styled-components/macro'
 import Header from './Header/Header'
 import Hero from './Hero/Hero'
@@ -8,19 +8,16 @@ import AboutMe from './AboutMe/AboutMe'
 
 export default function App() {
   const projectRef = useRef(null)
-
-  useEffect(() => {
-    console.log(projectRef.current)
-  }, [])
+  const aboutMeRef = useRef(null)
 
   return (
     <AppContainer>
-      <Header projectRef={projectRef} />
+      <Header projectRef={projectRef} aboutMeRef={aboutMeRef} />
       <main>
         <Hero />
         <FeaturedProject ref={projectRef} />
         <TechStack />
-        <AboutMe />
+        <AboutMe ref={aboutMeRef} />
       </main>
     </AppContainer>
   )
