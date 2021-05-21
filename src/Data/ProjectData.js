@@ -14,14 +14,8 @@ export const projects = [
   {
     title: 'React Tutorial: Pizzashop',
     screenshot: PizzaScreenshot,
-    description: '',
-    github: 'https://github.com/janhenrikfock/react_ordering_app',
-    deployment: 'https://react-ordering-app.vercel.app/',
-  },
-  {
-    title: 'React Tutorial: Pizzashop',
-    screenshot: PizzaScreenshot,
-    description: '',
+    description:
+      'Das Produkt eines weiterführenden Onlinekurses zu meinem TechStack. Ein Pizzashop als Onepager in Desktopformat, umgesetzt mit React.js und Styled-Components.  ',
     github: 'https://github.com/janhenrikfock/react_ordering_app',
     deployment: 'https://react-ordering-app.vercel.app/',
   },

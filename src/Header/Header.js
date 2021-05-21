@@ -4,7 +4,7 @@ import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 
-export default function Header({ projectRef, aboutMeRef }) {
+export default function Header({ projectRef, techStackRef }) {
   function scrollTo(ref) {
     ref.current.scrollIntoView({
       behavior: 'smooth',
@@ -19,10 +19,9 @@ export default function Header({ projectRef, aboutMeRef }) {
           <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work
           </NavItem>
-          <NavItem onClick={() => scrollTo(aboutMeRef)} href="#">
-            About me
+          <NavItem onClick={() => scrollTo(techStackRef)} href="#">
+            My Techstack
           </NavItem>
-          <NavItem href="#">Contact</NavItem>
         </Navigation>
       </NavContainer>
       <SocialHeader>

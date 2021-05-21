@@ -1,11 +1,12 @@
+import React from 'react'
 import styled from 'styled-components/macro'
 import html_css_js from '../images/html_css_js.svg'
 import react_icon from '../images/react_icon.svg'
 import nodejs_icon from '../images/nodejs_icon.svg'
 
-export default function TechStack() {
+function TechStack(props, ref) {
   return (
-    <SkillsSection>
+    <SkillsSection ref={ref}>
       <SkillList>
         <SkillCard>
           <IconContainerOne>
@@ -39,6 +40,10 @@ export default function TechStack() {
     </SkillsSection>
   )
 }
+const forwardedTechStack = React.forwardRef(TechStack)
+
+export default forwardedTechStack
+
 const SkillsSection = styled.section`
   background-color: #00405e;
   margin-top: -6em;

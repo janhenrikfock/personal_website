@@ -4,20 +4,23 @@ import Header from './Header/Header'
 import Hero from './Hero/Hero'
 import FeaturedProject from './FeaturedProject/FeaturedProject'
 import TechStack from './TechStack/TechStack'
-import AboutMe from './AboutMe/AboutMe'
+import { projects } from './Data/ProjectData'
+import Project from './Projects/Projects'
 
 export default function App() {
   const projectRef = useRef(null)
-  const aboutMeRef = useRef(null)
+  const techStackRef = useRef(null)
 
   return (
     <AppContainer>
-      <Header projectRef={projectRef} aboutMeRef={aboutMeRef} />
+      <Header projectRef={projectRef} techStackRef={techStackRef} />
       <main>
         <Hero />
         <FeaturedProject ref={projectRef} />
-        <TechStack />
-        <AboutMe ref={aboutMeRef} />
+        <TechStack ref={techStackRef} />
+        {projects.map((project) => (
+          <Project project={project} />
+        ))}
       </main>
     </AppContainer>
   )
