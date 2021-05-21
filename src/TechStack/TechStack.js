@@ -15,7 +15,8 @@ function TechStack(props, ref) {
           <h3>HTML CSS JS</h3>
           <p>HTML und CSS zusammen mit JavaScript auf Basis EcmaScript2020.</p>
           <p>
-            Grundlagen des Komponentanbasierten arbeitens mit Queryselector.
+            Komponentanbasiertes und Objektorientiertes arbeiten mit
+            Queryselectors.
           </p>
         </SkillCard>
         <SkillCard>
