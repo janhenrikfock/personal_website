@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import ProjectScreenshot from '../images/screenshot.svg'
 import github from '../images/github.svg'
 import webicon from '../images/web-icon.svg'
+import { featuredProject } from '../Data/ProjectData'
 
 function FeaturedProject(props, ref) {
   return (
@@ -10,30 +10,28 @@ function FeaturedProject(props, ref) {
       <FlexLeft>
         <Bubble></Bubble>
         <Subtitle>Featured Project</Subtitle>
-        <StyledH2>Gesellenstück: Monsters of DnD</StyledH2>
+        <StyledH2>{featuredProject.title}</StyledH2>
 
         <DescriptionParagraph>
-          Mein Gesellenstück des Bootcamps war ein Monsterkatalog für mein
-          Lieblingshobby "Dungeons and Dragons". Ich konnte hierfür auf eine API
-          zurückgreifen die die Informationen zur Verfügung stellt. Das Projekt
-          ist realisiert mit React.js. Alle Komponenten sind mit Unit-Tests
-          versehen und mit Storybook wurde auch ein interaktiver Styleguide
-          implementiert.
+          {featuredProject.description}
         </DescriptionParagraph>
         <LinkList>
           <ListItem>
-            <Link href="https://github.com/janhenrikfock/monsters-of-dnd">
+            <Link href={featuredProject.github}>
               <Icon src={github} alt="github logo" /> Check the Repo
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://capstone-project-six.vercel.app/">
-              <Icon src={webicon} alt="github logo" /> Check the Project
+            <Link href={featuredProject.deployment}>
+              <Icon src={webicon} alt="web-logo" /> Check the Project
             </Link>
           </ListItem>
         </LinkList>
       </FlexLeft>
-      <Screenshot src={ProjectScreenshot} alt="Screenshot featured project" />
+      <Screenshot
+        src={featuredProject.screenshot}
+        alt="Screenshot of the project"
+      />
     </FeaturedSection>
   )
 }

@@ -28,17 +28,17 @@ export default function Header({ projectRef, aboutMeRef }) {
       <SocialHeader>
         <SocialNav>
           <li>
-            <a href="https://github.com/">
+            <a href="https://github.com/janhenrikfock">
               <img src={github} alt="github logo" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/">
+            <a href="https://www.xing.com/profile/JanHenrik_Fock2/cv">
               <img src={xing} alt="xing logo" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/">
+            <a href="https://www.linkedin.com/in/janhenrikfock/">
               <img src={linkedin} alt="linkedin logo" />
             </a>
           </li>
