@@ -15,7 +15,6 @@ export default function Header({ projectRef, aboutMeRef }) {
     <HeaderContainer>
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
-
         <Navigation>
           <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work
