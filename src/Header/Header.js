@@ -4,37 +4,40 @@ import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
 
-export default function Header() {
-  function scrollTo(scroll) {
-    window.scrollTo({ top: scroll, behavior: 'smooth' })
+export default function Header({ projectRef, techStackRef }) {
+  function scrollTo(ref) {
+    ref.current.scrollIntoView({
+      behavior: 'smooth',
+    })
   }
+
   return (
     <HeaderContainer>
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
-
         <Navigation>
-          <NavItem onClick={() => scrollTo(800)} href="#">
+          <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work
           </NavItem>
-          <NavItem href="#">Abou me</NavItem>
-          <NavItem href="#">Contact</NavItem>
+          <NavItem onClick={() => scrollTo(techStackRef)} href="#">
+            My Techstack
+          </NavItem>
         </Navigation>
       </NavContainer>
       <SocialHeader>
         <SocialNav>
           <li>
-            <a href="https://github.com/">
+            <a href="https://github.com/janhenrikfock">
               <img src={github} alt="github logo" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/">
+            <a href="https://www.xing.com/profile/JanHenrik_Fock2/cv">
               <img src={xing} alt="xing logo" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/">
+            <a href="https://www.linkedin.com/in/janhenrikfock/">
               <img src={linkedin} alt="linkedin logo" />
             </a>
           </li>

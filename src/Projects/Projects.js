@@ -2,45 +2,35 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import github from '../images/github.svg'
 import webicon from '../images/web-icon.svg'
-import { featuredProject } from '../Data/ProjectData'
 
-function FeaturedProject(props, ref) {
+export default function Project({ project }, ref) {
   return (
-    <FeaturedSection ref={ref}>
+    <ProjectSection>
       <FlexLeft>
         <Bubble></Bubble>
-        <Subtitle>Featured Project</Subtitle>
-        <StyledH2>{featuredProject.title}</StyledH2>
+        <Subtitle>Project</Subtitle>
+        <StyledH2>{project.title}</StyledH2>
 
-        <DescriptionParagraph>
-          {featuredProject.description}
-        </DescriptionParagraph>
+        <DescriptionParagraph>{project.description}</DescriptionParagraph>
         <LinkList>
           <ListItem>
-            <Link href={featuredProject.github}>
+            <Link href={project.github}>
               <Icon src={github} alt="github logo" /> Check the Repo
             </Link>
           </ListItem>
           <ListItem>
-            <Link href={featuredProject.deployment}>
+            <Link href={project.deployment}>
               <Icon src={webicon} alt="web-logo" /> Check the Project
             </Link>
           </ListItem>
         </LinkList>
       </FlexLeft>
-      <Screenshot
-        src={featuredProject.screenshot}
-        alt="Screenshot of the project"
-      />
-    </FeaturedSection>
+      <Screenshot src={project.screenshot} alt="Screenshot of the project" />
+    </ProjectSection>
   )
 }
 
-const forwardedFeaturedProject = React.forwardRef(FeaturedProject)
-
-export default forwardedFeaturedProject
-
-const FeaturedSection = styled.section`
+const ProjectSection = styled.section`
   position: relative;
 
   @media (min-width: 950px) {
@@ -66,13 +56,13 @@ const Subtitle = styled.p`
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
-  color: #00a5a8;
+  color: black;
   letter-spacing: 0.2em;
   font-size: 1.15em;
 `
 const StyledH2 = styled.h2`
   text-align: left;
-  color: black;
+  color: #3b3b3b;
   font-weight: bold;
   font-size: 1.4em;
 `
@@ -106,4 +96,6 @@ const Icon = styled.img`
 const Screenshot = styled.img`
   max-height: 550px;
   min-height: 270px;
+  filter: grayscale(100%);
+  border-radius: 20px;
 `
