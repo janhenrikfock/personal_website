@@ -99,12 +99,11 @@ const ScrollAnim = styled.svg`
 `
 const animateSwitch = keyframes`
 0%, 100%{
-  transform: translateY(0px)
+  transform: translateY(0px);
 }
 50%{
-  transform: translateY(30px)
-}
-`
+  transform: translateY(30px);
+}`
 const AnimatedCircle = styled.circle`
   animation: ${animateSwitch} 1.5s infinite alternate-reverse;
 `

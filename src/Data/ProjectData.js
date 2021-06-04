@@ -1,5 +1,6 @@
 import ProjectScreenshot from '../images/screenshot.svg'
 import PizzaScreenshot from '../images/pizza_screenshot.svg'
+import MapScreenshot from '../images/Screenshot_Map.svg'
 
 export const featuredProject = {
   title: 'Gesellenstück: Monsters of DnD',
@@ -18,5 +19,13 @@ export const projects = [
       'Das Produkt eines weiterführenden Onlinekurses zu meinem TechStack. Ein Pizzashop als Onepager in Desktopformat, umgesetzt mit React.js und Styled-Components.  ',
     github: 'https://github.com/janhenrikfock/react_ordering_app',
     deployment: 'https://react-ordering-app.vercel.app/',
+  },
+  {
+    title: 'JavaScript Tutorial: ',
+    screenshot: MapScreenshot,
+    description:
+      'Teil eines JS Onlinekurses. Für mich ist dieses Projekt eine gute Übung im Umgang mit externen Libraries, sowie Code-Architektur und Objektbasiertem code in VanillaJS. ',
+    github: 'https://github.com/janhenrikfock/JSTutorial_Maps',
+    deployment: 'https://js-tutorial-maps.vercel.app/',
   },
 ]
