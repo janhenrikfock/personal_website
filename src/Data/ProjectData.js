@@ -11,7 +11,7 @@ export const featuredProject = {
   deployment: 'https://capstone-project-six.vercel.app/',
 }
 
-export const projects = [
+export const learning = [
   {
     title: 'React Tutorial: Pizzashop',
     screenshot: PizzaScreenshot,
@@ -24,7 +24,7 @@ export const projects = [
     title: 'JavaScript Tutorial: ',
     screenshot: MapScreenshot,
     description:
-      'Teil eines JS Onlinekurses. Für mich ist dieses Projekt eine gute Übung im Umgang mit externen Libraries, sowie Code-Architektur und Objektbasiertem code in VanillaJS. ',
+      'Teil eines JS Onlinekurses. Für mich ist dieses Projekt eine gute Übung im Umgang mit externen Libraries, sowie Code-Architektur und Objektbasiertem Code in VanillaJS. ',
     github: 'https://github.com/janhenrikfock/JSTutorial_Maps',
     deployment: 'https://js-tutorial-maps.vercel.app/',
   },

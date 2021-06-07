@@ -11,7 +11,6 @@ function FeaturedProject(props, ref) {
         <Bubble></Bubble>
         <Subtitle>Featured Project</Subtitle>
         <StyledH2>{featuredProject.title}</StyledH2>
-
         <DescriptionParagraph>
           {featuredProject.description}
         </DescriptionParagraph>

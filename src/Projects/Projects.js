@@ -10,7 +10,6 @@ export default function Project({ project }, ref) {
         <Bubble></Bubble>
         <Subtitle>Project</Subtitle>
         <StyledH2>{project.title}</StyledH2>
-
         <DescriptionParagraph>{project.description}</DescriptionParagraph>
         <LinkList>
           <ListItem>
