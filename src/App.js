@@ -10,17 +10,24 @@ import Project from './Projects/Projects'
 export default function App() {
   const projectRef = useRef(null)
   const techStackRef = useRef(null)
+  const learningRef = useRef(null)
 
   return (
     <AppContainer>
-      <Header projectRef={projectRef} techStackRef={techStackRef} />
+      <Header
+        projectRef={projectRef}
+        techStackRef={techStackRef}
+        learningRef={learningRef}
+      />
       <main>
         <Hero />
         <FeaturedProject ref={projectRef} />
         <TechStack ref={techStackRef} />
-        {learning.map((project) => (
-          <Project project={project} />
-        ))}
+        <div ref={learningRef}>
+          {learning.map((project) => (
+            <Project project={project} />
+          ))}
+        </div>
       </main>
     </AppContainer>
   )
