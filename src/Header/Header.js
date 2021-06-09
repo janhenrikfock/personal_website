@@ -1,14 +1,27 @@
+import { useState } from 'react'
 import styled from 'styled-components/macro'
 import jhflogo from '../images/janhenrikfock.svg'
 import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
+import menuicon from '../images/Icon_burgermenu.svg'
 
 export default function Header({ projectRef, techStackRef, learningRef }) {
+  const [showMenu, setShowMenu] = useState(false)
+
   function scrollTo(ref) {
     ref.current.scrollIntoView({
       behavior: 'smooth',
     })
+  }
+
+  function toggleMenu(state) {
+    if (state === false) {
+      setShowMenu(true)
+    } else {
+      setShowMenu(false)
+    }
+    console.log(showMenu)
   }
 
   return (
@@ -16,16 +29,20 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
 
-        <Navigation>
+        <Menubutton onClick={() => toggleMenu(showMenu)}>
+          <img src={menuicon} alt="click to show navigation" />
+        </Menubutton>
+
+        <Navigation menuState={showMenu}>
           <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work
           </NavItem>
           <NavItem onClick={() => scrollTo(techStackRef)} href="#">
             My Techstack
           </NavItem>
-          {/* <NavItem onClick={() => scrollTo(learningRef)} href="#">
+          <NavItem onClick={() => scrollTo(learningRef)} href="#">
             My Learning
-          </NavItem> */}
+          </NavItem>
         </Navigation>
       </NavContainer>
       <SocialHeader>
@@ -50,6 +67,12 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
     </HeaderContainer>
   )
 }
+
+const displayMenu = {
+  false: 'none',
+  true: 'flex',
+}
+
 const HeaderContainer = styled.div`
   background-color: #023046;
   @media (min-width: 800px) {
@@ -72,15 +95,45 @@ const Logo = styled.img`
   min-width: 110px;
   max-width: 160px;
 `
+const Menubutton = styled.label`
+  width: 60px;
+  height: 50px;
+  @media (min-width: 800px) {
+    display: none;
+  }
+`
 const Navigation = styled.ul`
-  float: right;
-  display: flex;
+  display: ${({ menuState }) => displayMenu[menuState]};
+  flex-direction: column;
+  border-radius: 5px;
+  position: absolute;
+  top: 120px;
+  right: 5%;
+  z-index: 10;
+  width: 50%;
+  text-align: right;
+  background: white;
+  @media (min-width: 800px) {
+    flex-direction: row;
+    float: right;
+    display: flex;
+    position: unset;
+    width: unset;
+    background: none;
+    text-align: left;
+  }
 `
 
 const NavItem = styled.li`
+  color: #023046;
+  padding: 1.2rem 1rem;
   cursor: pointer;
-  color: white;
-  padding: 0 1em;
+  border-bottom: solid 2px #023046;
+  @media (min-width: 800px) {
+    border: none;
+    padding: 0 1em;
+    color: white;
+  }
 `
 const SocialHeader = styled.div`
   display: none;
