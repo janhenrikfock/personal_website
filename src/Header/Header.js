@@ -3,6 +3,7 @@ import jhflogo from '../images/janhenrikfock.svg'
 import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
+import menu_icon from '../images/icon_burgermenu.svg'
 
 export default function Header({ projectRef, techStackRef, learningRef }) {
   function scrollTo(ref) {
@@ -15,6 +16,12 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
     <HeaderContainer>
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
+
+        <Menulabel htmlfor="toggle">
+          <img src={menu_icon} alt="menu button" />
+        </Menulabel>
+        <Checkbox type="checkbox" id="toggle"></Checkbox>
+
         <Navigation>
           <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work
@@ -22,9 +29,9 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
           <NavItem onClick={() => scrollTo(techStackRef)} href="#">
             My Techstack
           </NavItem>
-          <NavItem onClick={() => scrollTo(learningRef)} href="#">
+          {/* <NavItem onClick={() => scrollTo(learningRef)} href="#">
             My Learning
-          </NavItem>
+          </NavItem> */}
         </Navigation>
       </NavContainer>
       <SocialHeader>
@@ -72,8 +79,23 @@ const Logo = styled.img`
   max-width: 160px;
 `
 const Navigation = styled.ul`
+  display: none;
+  @media (min-width: 800px) {
+    float: right;
+    display: flex;
+  }
+`
+
+const Menulabel = styled.label`
+  height: 50px;
+  width: 50px;
   float: right;
-  display: flex;
+  @media (min-width: 800px) {
+    display: none;
+  }
+`
+const Checkbox = styled.input`
+  display: none;
 `
 const NavItem = styled.li`
   cursor: pointer;
