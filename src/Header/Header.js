@@ -123,12 +123,14 @@ const Navigation = styled.ul`
     text-align: left;
   }
 `
+
 const NavItem = styled.li`
   color: #023046;
   padding: 1.2rem 1rem;
   cursor: pointer;
   border-bottom: solid 2px #023046;
   @media (min-width: 800px) {
+    border: none;
     padding: 0 1em;
     color: white;
   }

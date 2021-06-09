@@ -21,7 +21,7 @@ export const learning = [
     deployment: 'https://react-ordering-app.vercel.app/',
   },
   {
-    title: 'JavaScript Tutorial: ',
+    title: 'JavaScript Tutorial: "Mapty" by Jonas Schmedtmann',
     screenshot: MapScreenshot,
     description:
       'Teil eines JS Onlinekurses. Für mich ist dieses Projekt eine gute Übung im Umgang mit externen Libraries, sowie Code-Architektur und Objektbasiertem Code in VanillaJS. ',
