@@ -3,7 +3,6 @@ import jhflogo from '../images/janhenrikfock.svg'
 import xing from '../images/xing.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
-import menu_icon from '../images/icon_burgermenu.svg'
 
 export default function Header({ projectRef, techStackRef, learningRef }) {
   function scrollTo(ref) {
