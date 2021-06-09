@@ -17,11 +17,6 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
 
-        <Menulabel htmlfor="toggle">
-          <img src={menu_icon} alt="menu button" />
-        </Menulabel>
-        <Checkbox type="checkbox" id="toggle"></Checkbox>
-
         <Navigation>
           <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work
@@ -79,24 +74,10 @@ const Logo = styled.img`
   max-width: 160px;
 `
 const Navigation = styled.ul`
-  display: none;
-  @media (min-width: 800px) {
-    float: right;
-    display: flex;
-  }
+  float: right;
+  display: flex;
 `
 
-const Menulabel = styled.label`
-  height: 50px;
-  width: 50px;
-  float: right;
-  @media (min-width: 800px) {
-    display: none;
-  }
-`
-const Checkbox = styled.input`
-  display: none;
-`
 const NavItem = styled.li`
   cursor: pointer;
   color: white;
