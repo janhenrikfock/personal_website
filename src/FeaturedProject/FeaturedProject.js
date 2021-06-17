@@ -102,8 +102,8 @@ const Link = styled.a`
 `
 const Icon = styled.img`
   padding-top: 0.45em;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 `
 const Screenshot = styled.img`
   max-height: 550px;
