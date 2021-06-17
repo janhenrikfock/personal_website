@@ -41,6 +41,19 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
           <NavItem onClick={() => scrollTo(learningRef)} href="#">
             My Learning
           </NavItem>
+          <MobileNavItem>
+            <MobileSocialLinks>
+              <a href="https://github.com/janhenrikfock">
+                <img src={github} alt="github logo" />
+              </a>
+              <a href="https://www.xing.com/profile/JanHenrik_Fock2/cv">
+                <img src={xing} alt="xing logo" />
+              </a>
+              <a href="https://www.linkedin.com/in/janhenrikfock/">
+                <img src={linkedin} alt="linkedin logo" />
+              </a>
+            </MobileSocialLinks>
+          </MobileNavItem>
         </Navigation>
       </NavContainer>
       <SocialHeader>
@@ -133,6 +146,19 @@ const NavItem = styled.li`
     color: white;
   }
 `
+const MobileNavItem = styled.li`
+  color: #023046;
+  padding: 1.2rem 1rem;
+  border-bottom: solid 2px #023046;
+  @media (min-width: 800px) {
+    display: none;
+  }
+`
+const MobileSocialLinks = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`
+
 const SocialHeader = styled.div`
   display: none;
   @media (min-width: 800px) {
