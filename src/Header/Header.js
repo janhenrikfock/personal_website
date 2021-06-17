@@ -13,6 +13,7 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
     ref.current.scrollIntoView({
       behavior: 'smooth',
     })
+    setShowMenu(false)
   }
 
   function toggleMenu(state) {
