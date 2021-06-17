@@ -25,7 +25,7 @@ export default function App() {
         <TechStack ref={techStackRef} />
         <div ref={learningRef}>
           {learning.map((project) => (
-            <Project project={project} />
+            <Project key={project.title} project={project} />
           ))}
         </div>
       </main>

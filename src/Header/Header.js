@@ -21,18 +21,15 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
     } else {
       setShowMenu(false)
     }
-    console.log(showMenu)
   }
 
   return (
     <HeaderContainer>
       <NavContainer>
         <Logo src={jhflogo} alt="logo of the websites owner" />
-
         <Menubutton onClick={() => toggleMenu(showMenu)}>
           <img src={menuicon} alt="click to show navigation" />
         </Menubutton>
-
         <Navigation menuState={showMenu}>
           <NavItem onClick={() => scrollTo(projectRef)} href="#">
             My Work

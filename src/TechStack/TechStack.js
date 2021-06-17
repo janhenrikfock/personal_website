@@ -25,7 +25,7 @@ function TechStack(props, ref) {
           </IconContainer>
           <h3>React.js</h3>
           <p>
-            Ich habe React als Teil einen Bootcamps kennengelernt und habe
+            Ich habe React als Teil eines Bootcamps kennengelernt und habe
             deshalb die meiste Erfahrung mit dem Framework.
           </p>
         </SkillCard>

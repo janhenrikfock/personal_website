@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import github from '../images/github.svg'
 import webicon from '../images/web-icon.svg'
 
-export default function Project({ project }, ref) {
+export default function Project({ project }) {
   return (
     <ProjectSection>
       <FlexLeft>
