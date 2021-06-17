@@ -88,7 +88,7 @@ const DesignContainer = styled.div`
     display: unset;
     width: 350px;
     margin-left: 66%;
-    margin-top: 12%;
+    margin-top: 10%;
     left: -175px;
   }
 `
