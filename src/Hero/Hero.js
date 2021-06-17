@@ -11,7 +11,6 @@ export default function Hero() {
           verwandele Ideen in Code.
         </HeroText>
         <CallToAction>Lerne mich kennen:</CallToAction>
-
         <ScrollAnim width="52" height="92" viewBox="0 0 52 92">
           <g
             id="Switch_CtA"
@@ -55,11 +54,10 @@ const HeroSection = styled.section`
   display: grid;
   text-align: left;
   padding: 5em 2em;
-
+  height: 85%;
   @media (min-width: 800px) {
-    padding: 5em 5em 5em 10em;
-    height: 78vh;
     width: 66%;
+    padding: 5em 5em 5em 10em;
   }
 `
 const HeroHeadline = styled.h1`

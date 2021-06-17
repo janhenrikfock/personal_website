@@ -3,13 +3,16 @@ import styled from 'styled-components/macro'
 import github from '../images/github.svg'
 import webicon from '../images/web-icon.svg'
 
-export default function Project({ project }, ref) {
+export default function Project({ project }) {
   return (
     <ProjectSection>
       <FlexLeft>
         <Bubble></Bubble>
         <Subtitle>Project</Subtitle>
-        <StyledH2>{project.title}</StyledH2>
+        <StyledH2>
+          {project.title}
+          <Icon src={project.techIcon} alt="Icon of the Technology" />
+        </StyledH2>
         <DescriptionParagraph>{project.description}</DescriptionParagraph>
         <LinkList>
           <ListItem>
@@ -89,8 +92,8 @@ const Link = styled.a`
 `
 const Icon = styled.img`
   padding-top: 0.45em;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 `
 const Screenshot = styled.img`
   max-height: 550px;

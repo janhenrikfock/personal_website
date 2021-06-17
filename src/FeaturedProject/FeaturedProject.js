@@ -10,7 +10,10 @@ function FeaturedProject(props, ref) {
       <FlexLeft>
         <Bubble></Bubble>
         <Subtitle>Featured Project</Subtitle>
-        <StyledH2>{featuredProject.title}</StyledH2>
+        <StyledH2>
+          {featuredProject.title}
+          <Icon src={featuredProject.techIcon} alt="Icon of the Technology" />
+        </StyledH2>
         <DescriptionParagraph>
           {featuredProject.description}
         </DescriptionParagraph>
@@ -99,8 +102,8 @@ const Link = styled.a`
 `
 const Icon = styled.img`
   padding-top: 0.45em;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 `
 const Screenshot = styled.img`
   max-height: 550px;
