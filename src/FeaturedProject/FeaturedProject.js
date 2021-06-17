@@ -10,7 +10,10 @@ function FeaturedProject(props, ref) {
       <FlexLeft>
         <Bubble></Bubble>
         <Subtitle>Featured Project</Subtitle>
-        <StyledH2>{featuredProject.title}</StyledH2>
+        <StyledH2>
+          {featuredProject.title}
+          <Icon src={featuredProject.techIcon} alt="Icon of the Technology" />
+        </StyledH2>
         <DescriptionParagraph>
           {featuredProject.description}
         </DescriptionParagraph>

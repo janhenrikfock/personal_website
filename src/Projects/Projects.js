@@ -9,7 +9,10 @@ export default function Project({ project }) {
       <FlexLeft>
         <Bubble></Bubble>
         <Subtitle>Project</Subtitle>
-        <StyledH2>{project.title}</StyledH2>
+        <StyledH2>
+          {project.title}
+          <Icon src={project.techIcon} alt="Icon of the Technology" />
+        </StyledH2>
         <DescriptionParagraph>{project.description}</DescriptionParagraph>
         <LinkList>
           <ListItem>
