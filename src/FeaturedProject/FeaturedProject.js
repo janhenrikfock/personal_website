@@ -16,6 +16,9 @@ export default function FeaturedProject({ featuredProject }) {
         <DescriptionParagraph>
           {featuredProject.description}
         </DescriptionParagraph>
+        <DescriptionParagraph>
+          Display:{' ' + featuredProject.display}
+        </DescriptionParagraph>
         <LinkList>
           <ListItem>
             <Link href={featuredProject.github}>

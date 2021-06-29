@@ -14,6 +14,9 @@ export default function Project({ project }) {
           <Icon src={project.techIcon} alt="Icon of the Technology" />
         </StyledH2>
         <DescriptionParagraph>{project.description}</DescriptionParagraph>
+        <DescriptionParagraph>
+          Display:{' ' + project.display}
+        </DescriptionParagraph>
         <LinkList>
           <ListItem>
             <Link href={project.github}>
