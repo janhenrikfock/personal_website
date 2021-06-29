@@ -2,11 +2,10 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import github from '../images/github.svg'
 import webicon from '../images/web-icon.svg'
-import { featuredProject } from '../Data/ProjectData'
 
-function FeaturedProject(props, ref) {
+export default function FeaturedProject({ featuredProject }) {
   return (
-    <FeaturedSection ref={ref}>
+    <FeaturedSection>
       <FlexLeft>
         <Bubble></Bubble>
         <Subtitle>Featured Project</Subtitle>
@@ -37,10 +36,6 @@ function FeaturedProject(props, ref) {
     </FeaturedSection>
   )
 }
-
-const forwardedFeaturedProject = React.forwardRef(FeaturedProject)
-
-export default forwardedFeaturedProject
 
 const FeaturedSection = styled.section`
   position: relative;

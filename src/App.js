@@ -5,6 +5,7 @@ import Hero from './Hero/Hero'
 import FeaturedProject from './FeaturedProject/FeaturedProject'
 import TechStack from './TechStack/TechStack'
 import { learning } from './Data/ProjectData'
+import { featuredProjects } from './Data/ProjectData'
 import Project from './Projects/Projects'
 
 export default function App() {
@@ -21,7 +22,14 @@ export default function App() {
       />
       <main>
         <Hero />
-        <FeaturedProject ref={projectRef} />
+        <div ref={projectRef}>
+          {featuredProjects.map((featuredProject) => (
+            <FeaturedProject
+              featuredProject={featuredProject}
+              key={featuredProject.title}
+            />
+          ))}
+        </div>
         <TechStack ref={techStackRef} />
         <div ref={learningRef}>
           {learning.map((project) => (
