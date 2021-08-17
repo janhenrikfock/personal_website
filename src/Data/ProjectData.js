@@ -1,20 +1,20 @@
 import ProjectScreenshot from '../images/screenshot.svg'
 import PizzaScreenshot from '../images/pizza_screenshot.svg'
 import MapScreenshot from '../images/Screenshot_Map.svg'
-import PanelScreenshot from '../images/screenshot_accesspanel.svg'
 import reactIcon from '../images/react_icon.svg'
 import jsIcon from '../images/Icon_JS.svg'
+import CounterScreen from '../images/counter-screen.png'
 
 export const featuredProjects = [
   {
-    title: 'MVP: Management Access Panel',
-    display: 'Desktop only',
-    screenshot: PanelScreenshot,
+    title: 'Codechallenge: Flipcard Countdown',
+    display: 'Responsive',
+    screenshot: CounterScreen,
     techIcon: reactIcon,
     description:
-      'Ein MVP zum Frontend eines Access-Management-Systems. Mitarbeiter des Kunden können über das Panel auf die Datenbank des "Embedded Systems" zugreifen, und Zutrittsrechte anpassen',
-    github: 'https://github.com/janhenrikfock/Access-Management-Panel',
-    deployment: 'https://access-management-panel.vercel.app/',
+      'Meine Lösung zu der Flipcard-Countdown Challenge von FrontendMentor.io. Neben React.js und Styled-Components für CSS habe ich react-spring für die Animation angewendet.',
+    github: 'https://github.com/janhenrikfock/flipcard-countdown',
+    deployment: 'https://flipcard-countdown.vercel.app/',
   },
   {
     title: 'Gesellenstück: Monsters of DnD',
@@ -22,7 +22,7 @@ export const featuredProjects = [
     screenshot: ProjectScreenshot,
     techIcon: reactIcon,
     description:
-      'Mein Gesellenstück des Bootcamps war ein Monsterkatalog für mein Lieblingshobby "Dungeons and Dragons". Ich konnte hierfür auf eine API zurückgreifen die die Informationen zur Verfügung stellt. Das Projekt ist realisiert mit React.js. Alle Komponenten sind mit Unit-Tests versehen und mit Storybook wurde auch ein interaktiver Styleguide implementiert.',
+      'Mein Gesellenstück des Bootcamps war ein Monsterkatalog für mein Hobby "Dungeons and Dragons". Ich konnte hierfür auf eine API zurückgreifen die die Informationen zur Verfügung stellt. Das Projekt ist realisiert mit React.js. Alle Komponenten sind mit Unit-Tests versehen und mit Storybook wurde auch ein interaktiver Styleguide implementiert.',
     github: 'https://github.com/janhenrikfock/monsters-of-dnd',
     deployment: 'https://capstone-project-six.vercel.app/',
   },
