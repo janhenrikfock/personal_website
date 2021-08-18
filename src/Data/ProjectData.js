@@ -3,7 +3,7 @@ import PizzaScreenshot from '../images/pizza_screenshot.svg'
 import MapScreenshot from '../images/Screenshot_Map.svg'
 import reactIcon from '../images/react_icon.svg'
 import jsIcon from '../images/Icon_JS.svg'
-import CounterScreen from '../images/counter-screen.png'
+import CounterScreen from '../images/counter-screen.svg'
 
 export const featuredProjects = [
   {
