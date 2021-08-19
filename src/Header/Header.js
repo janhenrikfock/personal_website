@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SocialNavComponent from './SocialNav/SocialNav'
 import styled from 'styled-components/macro'
 import jhflogo from '../images/janhenrikfock.svg'
 import xing from '../images/xing.svg'
@@ -57,23 +58,7 @@ export default function Header({ projectRef, techStackRef, learningRef }) {
         </Navigation>
       </NavContainer>
       <SocialHeader>
-        <SocialNav>
-          <li>
-            <a href="https://github.com/janhenrikfock">
-              <img src={github} alt="github logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.xing.com/profile/JanHenrik_Fock2/cv">
-              <img src={xing} alt="xing logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/janhenrikfock/">
-              <img src={linkedin} alt="linkedin logo" />
-            </a>
-          </li>
-        </SocialNav>
+        <SocialNavComponent />
       </SocialHeader>
     </HeaderContainer>
   )
@@ -166,8 +151,4 @@ const SocialHeader = styled.div`
     justify-items: center;
     align-items: center;
   }
-`
-const SocialNav = styled.ul`
-  display: flex;
-  gap: 4em;
 `
