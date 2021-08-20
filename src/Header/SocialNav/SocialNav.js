@@ -63,7 +63,7 @@ const SocialLinkList = styled.ul`
 `
 const StyledLink = styled.a`
   &:hover {
-    fill: #f5034e;
+    fill: #00a5a8;
   }
 `
 const StyledPath = styled.path`

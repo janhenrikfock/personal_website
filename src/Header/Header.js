@@ -86,6 +86,7 @@ const NavContainer = styled.header`
     padding: 1.5em 10em;
   }
 `
+
 const Logo = styled.img`
   width: 20%;
   min-width: 110px;
@@ -129,6 +130,9 @@ const NavItem = styled.li`
     border: none;
     padding: 0 1em;
     color: white;
+  }
+  &:hover {
+    color: #f5034e;
   }
 `
 const MobileNavItem = styled.li`
